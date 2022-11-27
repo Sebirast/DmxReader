@@ -45,7 +45,7 @@ Das Schema kann dem dmxreader.pdf entnommen werden.
 
 <img src="verkabelung.jpeg" alt="drawing" width="500"/>
 
-*Verkabelung des Arduinos*
+*Abbildung 2: Verkabelung des Arduinos*
 
 Die Verbingung zwischen dem Arduino und dem Raspberry Pi besteht aus einem USB-A zu USB-B Kabel.
 
