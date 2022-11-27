@@ -42,10 +42,13 @@ lastindex = e1.get()
 # lastValue = serial.getValue(e1.get())
 
 while True:
-    if(checkTime(0.075)):
+    if(checkTime(7.5e-5)):
         if(lastindex != e1.get()):
             getValueWrapper()
             lastindex = e1.get()
         master.update_idletasks()
         master.update()
-        
+        # if lastValue != serial.getValue(e1.get()):
+        #     getValueWrapper()
+        #     lastValue = serial.getValue(e1.get())
+        print("hello world")
