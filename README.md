@@ -66,7 +66,7 @@ Hier ist die Klasse, welche die Serial-Kommunikation regelt, definiert. Sie hat 
 
 ### Arduino
 Der Code des Arduinos besteht nur aus einem File: main.cpp. Hierbei wird zuerst der DMX-Receiver und die Serial-Kommunikation initialisiert (in der `setup()` Funktion). In der `loop()` Funktion wird geprüft, ob eine Nachricht über den Serial hereingekommen ist. Wenn ja wird der Wert ausgelesen und anschliessend zurückgeschickt. Das Auslesen des DMX-Protokolls wird von der DMXSerial Library (https://github.com/mathertel/DMXSerial) übernommen.
-k
+
 ## Fazit
 Allgemein läuft das Programm gut. Man könnte jedoch noch einige Verbesserungen hinzufügen:
 - Momentan wird der DMX-Wert nur ausgelesen, wenn ein Knopf gedrückt wird. Hier könnte man eine Funktion schreiben, welche Veränderungen des DMX-Wertes erkennt und dann automatisch den neuen Wert an den Raspberry Pi schreibt.
