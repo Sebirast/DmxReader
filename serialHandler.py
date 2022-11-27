@@ -2,10 +2,12 @@
 import serial
 from tkinter import messagebox
 
+# class that handles all serial outputs and inputs
 class SerialHandler():
 
     ser = None
     
+    # constructor: the serial port is set
     def __init__(self):
         try:
             self.ser = serial.Serial('/dev/ttyACM1', 115200, timeout=1)
@@ -14,6 +16,7 @@ class SerialHandler():
 
         self.ser.reset_input_buffer()
     
+    # this funciton sends a index to the arduino. when the arduino sends a message back it unpacks and decodes that message. after that the message is returned. channel is the message that is to be sent to the arduino
     def getValue(self, channel) -> str:
         try:
             print(int(channel))
